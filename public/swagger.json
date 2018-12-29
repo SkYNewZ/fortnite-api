@@ -34,15 +34,17 @@
       "name": "Lookup"
     },
     {
-      "name": "Stats",
-      "description": "Get all you Fornite stats"
+      "name": "Stats"
+    },
+    {
+      "name": "Leaderboard"
     }
   ],
   "produces": [
     "application/json"
   ],
   "paths": {
-    "/status": {
+    "/check": {
       "get": {
         "tags": [
           "Status"
@@ -53,6 +55,12 @@
             "description": "Fortnite is okay !",
             "schema": {
               "$ref": "#/definitions/Status"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/EpicGamesError"
             }
           }
         }
@@ -80,6 +88,12 @@
             "schema": {
               "$ref": "#/definitions/News"
             }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/EpicGamesError"
+            }
           }
         }
       }
@@ -105,6 +119,12 @@
             "description": "Current store in-game",
             "schema": {
               "$ref": "#/definitions/Store"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/EpicGamesError"
             }
           }
         }
@@ -149,7 +169,10 @@
             "description": "Invalid period value"
           },
           "default": {
-            "description": "Unexpected error or unavailable stats for given period"
+            "description": "Unexpected error or unavailable stats for given period",
+            "schema": {
+              "$ref": "#/definitions/EpicGamesError"
+            }
           }
         }
       }
@@ -173,6 +196,12 @@
             "description": "OK",
             "schema": {
               "$ref": "#/definitions/User"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/EpicGamesError"
             }
           }
         }
@@ -201,6 +230,101 @@
               "items": {
                 "$ref": "#/definitions/User"
               }
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/EpicGamesError"
+            }
+          }
+        }
+      }
+    },
+    "/leaderboard/{type}/{platform}/{group}": {
+      "get": {
+        "summary": "Return you own leaderboard",
+        "tags": [
+          "Leaderboard"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "path",
+            "type": "string",
+            "required": true,
+            "description": "Top 1, Top 2, Top 3, Top 25...",
+            "enum": [
+              "placetop1",
+              "placetop3",
+              "placetop5",
+              "placetop6",
+              "placetop10",
+              "placetop12",
+              "placetop25"
+            ],
+            "default": "alltime"
+          },
+          {
+            "name": "platform",
+            "in": "path",
+            "type": "string",
+            "required": true,
+            "description": "On which platform you want to retrieve leaderboard",
+            "enum": [
+              "pc",
+              "ps4",
+              "xb1"
+            ]
+          },
+          {
+            "name": "group",
+            "in": "path",
+            "type": "string",
+            "required": true,
+            "description": "solo ? duo ? squad ?",
+            "enum": [
+              "solo",
+              "duo",
+              "squad"
+            ]
+          },
+          {
+            "name": "period",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "enum": [
+              "daily",
+              "weekly",
+              "monthly",
+              "alltime"
+            ],
+            "default": "alltime"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "type": "number",
+            "required": false,
+            "default": "0"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "type": "number",
+            "required": false,
+            "default": 50
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "#/definitions/EpicGamesError"
             }
           }
         }
@@ -1688,6 +1812,32 @@
             }
           },
           "type": "object"
+        }
+      }
+    },
+    "EpicGamesError": {
+      "type": "object",
+      "properties": {
+        "errorCode": {
+          "type": "string"
+        },
+        "errorMessage": {
+          "type": "string"
+        },
+        "messageVars": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "numericErrorCode": {
+          "type": "number"
+        },
+        "originatingService": {
+          "type": "string"
+        },
+        "intent": {
+          "type": "string"
         }
       }
     }

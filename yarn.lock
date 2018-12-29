@@ -1505,7 +1505,14 @@ dot-prop@^4.1.0:
   dependencies:
     is-obj "^1.0.0"
 
-dotenv@^6.2.0:
+dotenv-safe@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/dotenv-safe/-/dotenv-safe-6.1.0.tgz#df6e72ced7d5bcfd9d870c9f656962a02197337b"
+  integrity sha512-O02OUTS+XmoRNZR4kRjJ9jlUGvQoXpMeTVVEBc8hUtgvPTgVZpsZH7TOocq4RVDpPrs2xGPwj6gIWjqRX+ErHA==
+  dependencies:
+    dotenv "^6.1.0"
+
+dotenv@^6.1.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.2.0.tgz#941c0410535d942c8becf28d3f357dbd9d476064"
   integrity sha512-HygQCKUBSFl8wKQZBSemMywRWcEDNidvNbjGVyZu3nbZ8qq9ubiPoGLMdRDpfSrpkkm9BXYFkpKxxFX38o/76w==
@@ -1876,6 +1883,11 @@ fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
+
+figlet@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/figlet/-/figlet-1.2.1.tgz#48d35df9d9b10b1b3888302e6e57904a0b00509c"
+  integrity sha512-qc8gycfnnfOmfvPl7Fi3JeTbcvdmbZkckyUVGGAM02je7Ookvu+bBfKy1I4FKqTsQHCs3ARJ76ip/k98r+OQuQ==
 
 figures@^2.0.0:
   version "2.0.0"
@@ -3677,11 +3689,6 @@ request@^2.88.0:
     tunnel-agent "^0.6.0"
     uuid "^3.3.2"
 
-require-environment-variables@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/require-environment-variables/-/require-environment-variables-1.2.0.tgz#535f9e9f7faba04e007b79ce77937b2cc8d47dc6"
-  integrity sha512-bh40t3apeg3RYpcee5UKH+U5K411+V4ZkekRlI+z3EcMuyej6YdnIuRt0PhIBeyuRCslRd/W3dLaPipLCKqZRA==
-
 require-uncached@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/require-uncached/-/require-uncached-1.0.3.tgz#4e0d56d6c9662fd31e43011c4b95aa49955421d3"
@@ -4089,6 +4096,11 @@ swagger-ui-express@^4.0.2:
   integrity sha512-XZtXI2+SKT3fgvJSGg4P7Dtmkzr50uoSb09IxbUWmjL538TIGRMZtfdEkjZEEq44xgGNAxMryzBEUdUnkXr8dA==
   dependencies:
     swagger-ui-dist "^3.18.1"
+
+swagger-ui-themes@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/swagger-ui-themes/-/swagger-ui-themes-3.0.0.tgz#4523cad5a43d460ec4c6ae633baa8a6e8fd69ba9"
+  integrity sha1-RSPK1aQ9Rg7Exq5jO6qKbo/Wm6k=
 
 table@^5.0.2:
   version "5.1.1"

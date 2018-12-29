@@ -1,7 +1,8 @@
-import { api } from './config'
+import api from './config'
 import { app, router } from './express'
 import 'colors'
 import './utils'
+import figlet from 'figlet'
 
 // routing
 import status from './routes/status'
@@ -25,10 +26,20 @@ defaultRoutes(app)
 
 // start main server
 app.listen(app.get('port') || 3000, () => {
-  api.login().then(() => {
-    console.info('Successfully logged to EpicGames server')
-  }).catch(error => {
-    console.error(error)
+  const { name } = require('../package.json')
+  figlet(name, (err, data) => {
+    if (err) {
+      console.error('Something went wrong with figlet xD')
+      process.exit(1)
+    }
+    console.log(data)
+
+    api.login().then(() => {
+      console.info('Successfully logged to EpicGames server')
+    }).catch(error => {
+      console.error(error)
+    })
+
+    console.log(`Listening on port ${app.get('port')}!`)
   })
-  console.log(`Listening on port ${app.get('port')}!`)
 })
