@@ -1,0 +1,1161 @@
+{
+  "_title": "Fortnite Game",
+  "_activeDate": "2017-08-30T03:20:48.050Z",
+  "lastModified": "2018-12-29T23:21:52.018Z",
+  "_locale": "en-US",
+  "survivalmessage": {
+    "_title": "survivalmessage",
+    "overrideablemessage": {
+      "_type": "CommonUI Simple Message",
+      "message": {
+        "_type": "CommonUI Simple Message Base",
+        "title": "The Survive the Storm event is now live!",
+        "body": "Take the pledge:\nSelect a target survival time of 3 or 7 nights.\n\nSend Feedback:\nSurvive the Storm is still in development. We’d love to hear what you think."
+      }
+    },
+    "_activeDate": "2017-08-25T20:35:56.304Z",
+    "lastModified": "2017-12-12T17:14:26.597Z",
+    "_locale": "en-US"
+  },
+  "athenamessage": {
+    "_title": "athenamessage",
+    "overrideablemessage": {
+      "_type": "CommonUI Simple Message",
+      "message": {
+        "image": "https://cdn2.unrealengine.com/Fortnite/RUS-Axe-1921x1082-fb41e51e9a280b9752b42e2b94b31e34d5758870.png",
+        "_type": "CommonUI Simple Message Base",
+        "title": "Test",
+        "body": "Test"
+      }
+    },
+    "_activeDate": "2017-08-30T03:08:31.687Z",
+    "lastModified": "2017-11-10T15:38:47.250Z",
+    "_locale": "en-US"
+  },
+  "subgameselectdata": {
+    "saveTheWorldUnowned": {
+      "_type": "CommonUI Simple Message",
+      "message": {
+        "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/subgameselect/StW_Subgameselect_Image-1920x1080-1a79c4be59d740cf2af905e98cb6ceebbacd0ee4.jpg",
+        "hidden": false,
+        "messagetype": "sale",
+        "_type": "CommonUI Simple Message Base",
+        "title": "50% OFF",
+        "body": "Cooperative PvE storm-fighting adventure!",
+        "spotlight": false
+      }
+    },
+    "_title": "subgameselectdata",
+    "battleRoyale": {
+      "_type": "CommonUI Simple Message",
+      "message": {
+        "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/subgameselect/BR_Subgameselect_Image-1920x1080-bff49931944291e2ff44c41a790faafb896160dc.jpg",
+        "hidden": false,
+        "messagetype": "normal",
+        "_type": "CommonUI Simple Message Base",
+        "title": "100 Player PvP",
+        "body": "100 Player PvP Battle Royale.\n\nPvE progress does not affect Battle Royale.",
+        "spotlight": false
+      }
+    },
+    "creative": {
+      "_type": "CommonUI Simple Message",
+      "message": {
+        "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/subgameselect/CM_Subgameselect_Image-1920x1080-3e72f5613d94ea35856399c985b2844fb1c2c6f6.jpg",
+        "hidden": false,
+        "messagetype": "sale",
+        "_type": "CommonUI Simple Message Base",
+        "title": "NEW - Build Your Own Island!",
+        "body": "Your Island. Your Friends. Your Rules.\n\nInvent games with friends, and build your dream Fortnite experiences.",
+        "spotlight": false
+      }
+    },
+    "saveTheWorld": {
+      "_type": "CommonUI Simple Message",
+      "message": {
+        "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/subgameselect/StW_Subgameselect_Image-1920x1080-1a79c4be59d740cf2af905e98cb6ceebbacd0ee4.jpg",
+        "hidden": false,
+        "messagetype": "sale",
+        "_type": "CommonUI Simple Message Base",
+        "title": "50% OFF",
+        "body": "Cooperative PvE storm-fighting adventure!",
+        "spotlight": false
+      }
+    },
+    "_activeDate": "2017-10-11T18:37:23.145Z",
+    "lastModified": "2018-12-25T03:26:05.476Z",
+    "_locale": "en-US"
+  },
+  "savetheworldnews": {
+    "news": {
+      "_type": "Battle Royale News",
+      "messages": [
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/savetheworldnews/v710+HF1/StW06_MOTD_Cocoa-1024x512-8740ad681d715091ef791e450f2a73f964e6b667.jpg",
+          "hidden": false,
+          "messagetype": "sale",
+          "_type": "CommonUI Simple Message Base",
+          "adspace": "WEEKLY STORE!",
+          "title": "Cocoa .45",
+          "body": "Winterized Silenced Pistol with projectiles that bounce off walls and pass through enemies!",
+          "spotlight": false
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/savetheworldnews/v710/StW06_MOTD_Frostnite-1024x512-b61f65f5e3cea2c181fc93e221d7f34f66f7d5a6.jpg",
+          "hidden": false,
+          "messagetype": "normal",
+          "_type": "CommonUI Simple Message Base",
+          "title": "Frostnite",
+          "body": "Keep the Burner filled with BluGlo to stay warm and survive the long winter nights to earn new Legendary rewards!",
+          "spotlight": false
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/savetheworldnews/v710+HF1/StW07_MOTD_Quest11-1024x512-c98d2c9fa0ae416bca009ca616a585db9a968157.jpg",
+          "hidden": false,
+          "messagetype": "sale",
+          "_type": "CommonUI Simple Message Base",
+          "adspace": "QUEST #11",
+          "title": "14 Days of Fortnite",
+          "body": "Save 12 survivors in successful missions to earn 250 Snowflake Tickets!",
+          "spotlight": false
+        }
+      ]
+    },
+    "_title": "SaveTheWorldNews",
+    "header": "FORTNITE",
+    "style": "SpecialEvent",
+    "_activeDate": "2018-08-06T18:25:46.770Z",
+    "lastModified": "2018-12-29T23:21:52.018Z",
+    "_locale": "en-US"
+  },
+  "battleroyalenews": {
+    "news": {
+      "_type": "Battle Royale News",
+      "messages": [
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/battleroyalenews/v710+HF1/BR06_MOTD_Sugarplum-1024x512-3072881112071a7b0193a449420c26792c15d9aa.jpg",
+          "hidden": false,
+          "messagetype": "sale",
+          "_type": "CommonUI Simple Message Base",
+          "adspace": "NEW!",
+          "title": "Sugary Sweet",
+          "body": "Sugarplum Outfit available now!",
+          "spotlight": false
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/battleroyalenews/v710+HF1/BR06_MOTD_Challenge11-1024x512-57a69e84a0ee3d16f6654cada79cf5fe45008640.jpg",
+          "hidden": false,
+          "messagetype": "sale",
+          "_type": "CommonUI Simple Message Base",
+          "adspace": "Challenge #11",
+          "title": "14 Days of Fortnite",
+          "body": "Thank the Bus Driver in different matches to unlock the new Frozen Axe Pickaxe!",
+          "spotlight": false
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/battleroyalenews/v710+HF1/BR06_MOTD_CloseEncounters50-1024x512-3b24cf29b6df6144981ffa59ce02f547fd211cbe.jpg",
+          "hidden": false,
+          "messagetype": "normal",
+          "_type": "CommonUI Simple Message Base",
+          "title": "Close Encounters 50's LTM",
+          "body": "Two teams of 50 in close quarters combat with Shotguns & Jetpacks!",
+          "spotlight": false
+        }
+      ]
+    },
+    "_title": "battleroyalenews",
+    "header": "FORTNITE",
+    "style": "SpecialEvent",
+    "_activeDate": "2018-08-17T16:00:00.000Z",
+    "lastModified": "2018-12-29T23:14:45.927Z",
+    "_locale": "en-US"
+  },
+  "loginmessage": {
+    "_title": "LoginMessage",
+    "loginmessage": {
+      "_type": "CommonUI Simple Message",
+      "message": {
+        "_type": "CommonUI Simple Message Base",
+        "title": "",
+        "body": ""
+      }
+    },
+    "_activeDate": "2017-07-19T13:14:04.490Z",
+    "lastModified": "2018-03-15T07:10:22.222Z",
+    "_locale": "en-US"
+  },
+  "playlistimages": {
+    "playlistimages": {
+      "images": [
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SolidGold-1024x512-36e202c36d3ef3bd151a97c060401d33ac6f549a.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_50v50SAU"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SolidGold-1024x512-36e202c36d3ef3bd151a97c060401d33ac6f549a.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_SolidGold_Duos"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LobbyTile_LTM_ScoreRoyale-1024x512-b608aaf7840cdf6b7a702c5cbe1848a2247516d6.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Score_Squads"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LobbyTile_LTM_ScoreRoyale-1024x512-b608aaf7840cdf6b7a702c5cbe1848a2247516d6.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Score_Duos"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LobbyTile_LTM_ScoreRoyale-1024x512-b608aaf7840cdf6b7a702c5cbe1848a2247516d6.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Score_Solo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LTM_Soaring50s-1024x512-80762dcc260cc959c11dac2ca2f6ae176eb63ef3.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Soaring_50s"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LobbyTile_LTM-Steady-Storm-1024x512-f38e603ed9c80b6210a25c4737d3d8b675b8d28e.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Steady_Squads"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LobbyTile_LTM-Steady-Storm-1024x512-f38e603ed9c80b6210a25c4737d3d8b675b8d28e.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Steady_Duos"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LobbyTile_LTM-Steady-Storm-1024x512-f38e603ed9c80b6210a25c4737d3d8b675b8d28e.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Steady_Solo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LTM_FlyExplosives-1024x512-6283e3392b3aa44794dac64423b22606f8773503.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_FlyExplosives_Squads"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LTM_FlyExplosives-1024x512-6283e3392b3aa44794dac64423b22606f8773503.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_FlyExplosives_Duos"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LTM_FlyExplosives-1024x512-6283e3392b3aa44794dac64423b22606f8773503.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_FlyExplosives_Solo"
+        },
+        {
+          "image": "/Fortnite/fortnite-game/playlisttiles/LTM_Tile_FinalFight.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Final_12"
+        },
+        {
+          "image": "/Fortnite/fortnite-game/playlisttiles/BR_LTM-Tile_Playground.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Playground"
+        },
+        {
+          "image": "/Fortnite/fortnite-game/playlisttiles/BR_LTM-Tile_Tactics-Showdown.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Taxes_Squads"
+        },
+        {
+          "image": "/Fortnite/fortnite-game/playlisttiles/BR_LTM-Tile_Tactics-Showdown.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Taxes_Duos"
+        },
+        {
+          "image": "/Fortnite/fortnite-game/playlisttiles/BR_LTM-Tile_Tactics-Showdown.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Taxes_Solo"
+        },
+        {
+          "image": "/Fortnite/fortnite-game/playlisttiles/LTM_Tile_FinalFight.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Final_20"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SniperShootout-1024x512-bcaf8004961e4e374d0603813f840f4b575d230b.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Snipers_Squads"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SniperShootout-1024x512-bcaf8004961e4e374d0603813f840f4b575d230b.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Snipers_Duos"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SniperShootout-1024x512-bcaf8004961e4e374d0603813f840f4b575d230b.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Snipers_Solo"
+        },
+        {
+          "image": "/Fortnite/fortnite-game/playlisttiles/BR04_LTM_BlitzShowdown.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Comp_Blitz_Solo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_5x20-1024x512-451b402db5751c25a1e7616930c5ae37d8b20710.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_5x20"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_Blitz-1024x512-98c63417095442c210177ee9b5f3463d0003cd5a.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Blitz_Duos"
+        },
+        {
+          "image": "/Fortnite/fortnite-game/playlisttiles/Blitz.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Blitz_Solo"
+        },
+        {
+          "image": "/Fortnite/fortnite-game/playlisttiles/Blitz.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Blitz_Squad"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_CloseEncounters-1024x512-e617b7603adb59353ba81ed392174859c0c6807b.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Close_Solo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_CloseEncounters-1024x512-e617b7603adb59353ba81ed392174859c0c6807b.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Close_Squad"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_CloseEncounters-1024x512-e617b7603adb59353ba81ed392174859c0c6807b.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Close_Duos"
+        },
+        {
+          "image": "/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SoloShowdown.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Comp_Solo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SolidGold-1024x512-36e202c36d3ef3bd151a97c060401d33ac6f549a.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_SolidGold_Solo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SolidGold-1024x512-36e202c36d3ef3bd151a97c060401d33ac6f549a.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_SolidGold_Squads"
+        },
+        {
+          "image": "/Fortnite/fortnite-game/playlisttiles/LTM_50v50.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_50v50"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_Gauntlet-1024x512-a0dca279534a121957275bcdb0b42042d8a010fd.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Carmine"
+        },
+        {
+          "image": "/Fortnite/fortnite-game/playlisttiles/BR_LobbyTileArt_Solo.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_DefaultSolo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LobbyTileArt_Duo-512x512-5dea8dfae97bddcd4e204dd47bfb245d3f68fc7b.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_DefaultDuo"
+        },
+        {
+          "image": "/Fortnite/fortnite-game/playlisttiles/BR_LobbyTileArt_Squad.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_DefaultSquad"
+        }
+      ],
+      "_type": "PlaylistImageList"
+    },
+    "_title": "playlistimages",
+    "_activeDate": "2018-08-07T02:14:56.108Z",
+    "lastModified": "2018-08-28T15:50:37.174Z",
+    "_locale": "en-US"
+  },
+  "battlepassaboutmessages": {
+    "news": {
+      "_type": "Battle Royale News",
+      "messages": [
+        {
+          "layout": "Right Image",
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/battle-pass-about/Season_7/BR07_In-Game_Upsell_How-Does-it-Work-1024x1024-d222377e2eb009abd35da611e3720a87f6e14da0.png",
+          "hidden": false,
+          "_type": "CommonUI Simple Message Base",
+          "title": "HOW DOES IT WORK?",
+          "body": "Play to level up your Battle Pass. The more you play, the more rewards you earn. Level up faster by completing Weekly Challenges. Earn up to 100 rewards worth over 25,000 V-Bucks (typically takes 75 to 150 hours of play). You can purchase the Battle Pass anytime during the season for 950 V-Bucks.",
+          "spotlight": false
+        },
+        {
+          "layout": "Left Image",
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/battle-pass-about/Season_7/BR07_In-Game_Upsell_What's-Inside-1024x1024-bb0b6196099fdaf2a63475effc07da70fb02edeb.png",
+          "hidden": false,
+          "_type": "CommonUI Simple Message Base",
+          "title": "WHAT’S INSIDE?",
+          "body": "When you buy the Battle Pass, you’ll instantly receive two exclusive progressive outfits - Zenith and Lynx! You can also earn exclusive rewards including emotes, outfits, pets, pickaxes, loading screens and new surprises. You’ll receive a reward each time you level up. 100 tiers total for over 100 rewards.\n\nThere’s also new challenges every week! These challenges unlock even more Battle Pass rewards.",
+          "spotlight": false
+        },
+        {
+          "layout": "Left Image",
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/battle-pass-about/Season_7/BR07_In-Game_Upsell_Introducing-Wraps-1024x1024-b6efdbea11341484e12d0624a08be350d7594c1b.png",
+          "hidden": false,
+          "_type": "CommonUI Simple Message Base",
+          "title": "INTRODUCING WRAPS!",
+          "body": "Give your weapons and vehicles a new look with Wraps. Level up your Battle Pass to unlock different Wraps, then equip them in your locker to items like vehicles, shotguns, rifles and more.",
+          "spotlight": false
+        },
+        {
+          "layout": "Left Image",
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/battle-pass-about/Season_7/BR07_In-Game_Upsell_Creative-Mode-1024x1024-c54e875fb804807eef2e2188d96ce00298a55a96.png",
+          "hidden": false,
+          "_type": "CommonUI Simple Message Base",
+          "title": "CREATIVE",
+          "body": "Buy the Battle Pass and get early access to your island in Creative! You’ll instantly unlock your own personal island, allowing you to save your creations. Don’t just build, build your Fortnite with friends. \n\nCreative will be free for all players on December 13.",
+          "spotlight": false
+        }
+      ]
+    },
+    "_title": "BattlePassAboutMessages",
+    "_activeDate": "2018-06-20T18:15:07.002Z",
+    "lastModified": "2018-12-06T16:12:40.090Z",
+    "_locale": "en-US"
+  },
+  "playlistinformation": {
+    "frontend_matchmaking_header_style": "None",
+    "_title": "playlistinformation",
+    "frontend_matchmaking_header_text": "",
+    "playlist_info": {
+      "_type": "Playlist Information",
+      "playlists": [
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_GroundGame-1024x512-37a4d1d335b4c9427bdc672db0f335f4df813874.jpg",
+          "playlist_name": "Playlist_Ground_Squads",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_GroundGame-1024x512-37a4d1d335b4c9427bdc672db0f335f4df813874.jpg",
+          "playlist_name": "Ground_Squads",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_OneShot-1024x512-9914c2c88b21f72f9628681e0cbcd20bb7311a3f.jpg",
+          "playlist_name": "Playlist_Low_Squads",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_HighExplosives50s-1024x512-3a8d44af3c2718b5aaaaebbd4627258a657bf0bf.jpg",
+          "playlist_name": "Playlist_50v50HE",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_HighExplosives-1024x512-4afc4219531db710e56f3b038e7cd84ca2be7675.jpg",
+          "playlist_name": "Playlist_HighExplosives_Duos",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_HighExplosives-1024x512-4afc4219531db710e56f3b038e7cd84ca2be7675.jpg",
+          "playlist_name": "Playlist_HighExplosives_Squads",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_HighExplosives-1024x512-4afc4219531db710e56f3b038e7cd84ca2be7675.jpg",
+          "playlist_name": "Playlist_HighExplosives_Squads / Event 24",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_WildWest-1024x512-42779242a5a73d654332d9d0afe0983f9d8401d0.jpg",
+          "playlist_name": "Playlist_WW_Squads",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_SneakySilencers-1024x512-1669e2eeddca63b61e9b94cc19c3ec502fd33f29.jpg",
+          "playlist_name": "Playlist_Sneaky_Solo",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_FoodFight16-1024x512-309538a1b961b5ab0c22417ab34170cc302bbab8.jpg",
+          "playlist_name": "Playlist_Barrier_16",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_CloseEncounters50s-1024x512-03dcc058e1bec3e853b3ee20594128805223b5a3.jpg",
+          "playlist_name": "Playlist_Close_50",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_HolidayDisco-1024x512-684bd4b41613e59d895a477389515a8b4878da6a.jpg",
+          "playlist_name": "Playlist_Disco_32_Alt",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_Slide-1024x512-189625349e80dc81e225691aa952ffd280996058.jpg",
+          "playlist_name": "Playlist_Slide_Solo",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_Barebones-1024x512-4a29337febb04e9043d57c9e61afe849f8a9e9c7.jpg",
+          "playlist_name": "Playlist_Hard_Squads",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_Siphon-1024x512-66cb27084be50387682989b50a01dbc9e42f5a5d.jpg",
+          "playlist_name": "Playlist_Vamp_Solo",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR07_14-DoF_Social_Day-01_Mode-Tile_3x33-1024x512-5fa7dd4752d1f0cc1a101f09cb170d0f5b2a31cf.jpg",
+          "playlist_name": "Playlist_33",
+          "violator": "New!",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LTM_Unvaulted-1024x512-d3cbe3c4a756190279af4ce98773d6599f7aab4f.jpg",
+          "playlist_name": "Playlist_Classic_Squads",
+          "violator": "New!",
+          "_type": "FortPlaylistInfo",
+          "description": "Battle Royale gameplay with a limited set of weapons and items, including a few that have been returned from the vault!",
+          "display_name": "Unvaulted"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/CM_LobbyTileArt-1024x512-fbcd48db36552ccb1ab4021b722ea29d515377cc.jpg",
+          "playlist_name": "Playlist_PlaygroundV2",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR06_ModeTile_TDM-1024x512-878ba9f92deb153ec85f2bcbce925e185344290e.jpg",
+          "playlist_name": "Playlist_Respawn_24",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR06_ModeTile_LTM_WildWest-1024x512-f67d9d1dd2ca0b290c92b1380240429f0f257a10.jpg",
+          "playlist_name": "Playlist_WW_Duos",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR06_LobbyTile_FoodFight-1024x512-5e1540a0a2ba0a1f663d32c60cfec3a360278672.png",
+          "playlist_name": "Playlist_Barrier_12",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR06_In-GamePlaylist_TeamTerror-1024x512-310430bdaf1b1dd0ecb4d3b180bb6409b7ff6e27.jpg",
+          "playlist_name": "playlist_deimos_50",
+          "_type": "FortPlaylistInfo",
+          "description": "Monsters have invaded the Battle Royale island! Two teams will battle it out as Cube Monsters join the fight. Defeat the other team to earn a Victory Royale.",
+          "display_name": ""
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR06_Fortnitemares_In-GamePlaylist_1024x512_-Solo-1024x512-7e7fe76e48beb3a06da0592cb26e412265986e4d.jpg",
+          "playlist_name": "Playlist_Deimos_Solo",
+          "violator": "",
+          "_type": "FortPlaylistInfo",
+          "display_name": ""
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR06_Fortnitemares_In-GamePlaylist_1024x512_Squads-1024x512-783a0812f6acf1f5931c8015e6ad13c0b76c5a9c.jpg",
+          "playlist_name": "Playlist_Deimos_Squad",
+          "violator": "",
+          "_type": "FortPlaylistInfo",
+          "display_name": ""
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR06_Fortnitemares_In-GamePlaylist_1024x512_Duos-1024x512-1eadb7cfab62c9eb5c90c65577c676d5d0bb15c2.jpg",
+          "playlist_name": "Playlist_Deimos_Duo",
+          "violator": "",
+          "_type": "FortPlaylistInfo",
+          "display_name": ""
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR06_LobbyTile_LTM_DiscoDomination-1024x512-c79f07de78d8283656fcf4d1ee757f880911d775.jpg",
+          "playlist_name": "Playlist_Disco_32",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR06_LobbyTile_LTM_DiscoDomination-1024x512-c79f07de78d8283656fcf4d1ee757f880911d775.jpg",
+          "playlist_name": "Playlist_Disco",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR05_LTM_Soaring50s-1024x512-80762dcc260cc959c11dac2ca2f6ae176eb63ef3.jpg",
+          "playlist_name": "Playlist_Soaring_Squads",
+          "special_border": "None",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR05_LTM_Soaring50s-1024x512-80762dcc260cc959c11dac2ca2f6ae176eb63ef3.jpg",
+          "playlist_name": "Playlist_Soaring_Duos",
+          "special_border": "None",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR05_LTM_Soaring50s-1024x512-80762dcc260cc959c11dac2ca2f6ae176eb63ef3.jpg",
+          "playlist_name": "Playlist_Soaring_Solo",
+          "special_border": "None",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/LlamaLower-512x512-5fda7d81162d9d918e72d8deadedc280959a8d1b.png",
+          "playlist_name": "Playlist_Bling_Squads",
+          "violator": "",
+          "special_border": "HighStakes",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/LlamaLower-512x512-5fda7d81162d9d918e72d8deadedc280959a8d1b.png",
+          "playlist_name": "Playlist_Bling_Duos",
+          "violator": "",
+          "special_border": "HighStakes",
+          "_type": "FortPlaylistInfo",
+          "description": ""
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/LlamaLower-512x512-5fda7d81162d9d918e72d8deadedc280959a8d1b.png",
+          "playlist_name": "Playlist_Bling_Solo",
+          "violator": "",
+          "special_border": "HighStakes",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR04_LTM_SolidGold-1024x512-36e202c36d3ef3bd151a97c060401d33ac6f549a.png",
+          "playlist_name": "Playlist_50v50SAU",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR05_LobbyTile_LTM_ScoreRoyale-1024x512-b608aaf7840cdf6b7a702c5cbe1848a2247516d6.jpg",
+          "playlist_name": "Playlist_Score_Squads",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR05_LobbyTile_LTM_ScoreRoyale-1024x512-b608aaf7840cdf6b7a702c5cbe1848a2247516d6.jpg",
+          "playlist_name": "Playlist_Score_Duos",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR05_LobbyTile_LTM_ScoreRoyale-1024x512-b608aaf7840cdf6b7a702c5cbe1848a2247516d6.jpg",
+          "playlist_name": "Playlist_Score_Solo",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR05_LTM_Soaring50s-1024x512-80762dcc260cc959c11dac2ca2f6ae176eb63ef3.jpg",
+          "playlist_name": "Playlist_Soaring_50s",
+          "special_border": "None",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR05_LobbyTile_LTM-Steady-Storm-1024x512-f38e603ed9c80b6210a25c4737d3d8b675b8d28e.jpg",
+          "playlist_name": "Playlist_Steady_Duos",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR05_LobbyTile_LTM-Steady-Storm-1024x512-f38e603ed9c80b6210a25c4737d3d8b675b8d28e.jpg",
+          "playlist_name": "Playlist_Steady_Squads",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR05_LobbyTile_LTM-Steady-Storm-1024x512-f38e603ed9c80b6210a25c4737d3d8b675b8d28e.jpg",
+          "playlist_name": "Playlist_Steady_Solo",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR05_LTM_FlyExplosives-1024x512-6283e3392b3aa44794dac64423b22606f8773503.png",
+          "playlist_name": "Playlist_FlyExplosives_Duos",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR05_LTM_FlyExplosives-1024x512-6283e3392b3aa44794dac64423b22606f8773503.png",
+          "playlist_name": "Playlist_FlyExplosives_Squads",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR05_LTM_FlyExplosives-1024x512-6283e3392b3aa44794dac64423b22606f8773503.png",
+          "playlist_name": "Playlist_FlyExplosives_Solo",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/LTM_Tile_FinalFight-1024x576-5af82788940faeef422ad204aaa241e36e7c9c56.jpg",
+          "playlist_name": "Playlist_Final_12",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LTM-Tile_Playground-1024x512-53db8a4b5fb41251af279eaf923bc00ecbc17792.jpg",
+          "playlist_name": "Playlist_Playground",
+          "special_border": "None",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistimages/BR_LTM-Tile_Tactics-Showdown-1024x512-a84753f49eb70d8751a99b4db83cdb5eb8290166.jpg",
+          "playlist_name": "Playlist_Taxes_Squads",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistimages/BR_LTM-Tile_Tactics-Showdown-1024x512-a84753f49eb70d8751a99b4db83cdb5eb8290166.jpg",
+          "playlist_name": "Playlist_Taxes_Duos",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistimages/BR_LTM-Tile_Tactics-Showdown-1024x512-a84753f49eb70d8751a99b4db83cdb5eb8290166.jpg",
+          "playlist_name": "Playlist_Taxes_Solo",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/LTM_Tile_FinalFight-1024x576-5af82788940faeef422ad204aaa241e36e7c9c56.jpg",
+          "playlist_name": "Playlist_Final_20",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR04_LTM_SniperShootout-1024x512-bcaf8004961e4e374d0603813f840f4b575d230b.jpg",
+          "playlist_name": "Playlist_Snipers_Squads",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR04_LTM_SniperShootout-1024x512-bcaf8004961e4e374d0603813f840f4b575d230b.jpg",
+          "playlist_name": "Playlist_Snipers_Duos",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR04_LTM_SniperShootout-1024x512-bcaf8004961e4e374d0603813f840f4b575d230b.jpg",
+          "playlist_name": "Playlist_Snipers_Solo",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_BlitzShowdown-1024x512-7eccbc505214ac522cc5dde7b3ceaa3a5f99e754.png",
+          "playlist_name": "Playlist_Comp_Blitz_Solo",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR04_LTM_5x20-1024x512-451b402db5751c25a1e7616930c5ae37d8b20710.png",
+          "playlist_name": "Playlist_5x20",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR04_LTM_Blitz-1024x512-98c63417095442c210177ee9b5f3463d0003cd5a.png",
+          "playlist_name": "Playlist_Blitz_Solo",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR04_LTM_Blitz-1024x512-98c63417095442c210177ee9b5f3463d0003cd5a.png",
+          "playlist_name": "Playlist_Blitz_Duos",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR04_LTM_Blitz-1024x512-98c63417095442c210177ee9b5f3463d0003cd5a.png",
+          "playlist_name": "Playlist_Blitz_Squad",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR04_LTM_CloseEncounters-1024x512-e617b7603adb59353ba81ed392174859c0c6807b.jpg",
+          "playlist_name": "Playlist_Close_Solo",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR04_LTM_CloseEncounters-1024x512-e617b7603adb59353ba81ed392174859c0c6807b.jpg",
+          "playlist_name": "Playlist_Close_Squad",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR04_LTM_CloseEncounters-1024x512-e617b7603adb59353ba81ed392174859c0c6807b.jpg",
+          "playlist_name": "Playlist_Close_Duos",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SoloShowdown-1024x512-0f522b0881adebfe241c6527f03c9140f70b88a7.png",
+          "playlist_name": "Playlist_Comp_Solo",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR04_LTM_SolidGold-1024x512-36e202c36d3ef3bd151a97c060401d33ac6f549a.png",
+          "playlist_name": "Playlist_SolidGold_Solo",
+          "violator": "",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR04_LTM_SolidGold-1024x512-36e202c36d3ef3bd151a97c060401d33ac6f549a.png",
+          "playlist_name": "Playlist_SolidGold_Duos",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR04_LTM_SolidGold-1024x512-36e202c36d3ef3bd151a97c060401d33ac6f549a.png",
+          "playlist_name": "Playlist_SolidGold_Squads",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/LTM_50v50-1024x512-788bf1a67426f54307c4296123ac2d3ff8cc0d6c.png",
+          "playlist_name": "Playlist_50v50",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR04_LTM_Gauntlet-1024x512-a0dca279534a121957275bcdb0b42042d8a010fd.png",
+          "playlist_name": "Playlist_Carmine",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LobbyTileArt_Solo-1024x512-e9c5051126788a1f7c2bd3def53bd0f28330af63.png",
+          "playlist_name": "Playlist_DefaultSolo",
+          "special_border": "None",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LobbyTileArt_Duo-1024x512-51bd239996627f521e710f3590f2788134333f0a.png",
+          "playlist_name": "Playlist_DefaultDuo",
+          "special_border": "None",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR_LobbyTileArt_Squad-1024x512-207e4bb476e202f876e1159852697bffc40d1f15.png",
+          "playlist_name": "Playlist_DefaultSquad",
+          "special_border": "None",
+          "_type": "FortPlaylistInfo"
+        }
+      ]
+    },
+    "_activeDate": "2018-04-25T15:05:39.956Z",
+    "lastModified": "2018-12-20T03:25:16.537Z",
+    "_locale": "en-US"
+  },
+  "tournamentinformation": {
+    "tournament_info": {
+      "tournaments": [
+        {
+          "background_text_color": "9E119C",
+          "poster_back_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FExplorerPopUp_Duos_Back-750x1080-8eb32078701074610439978d06253076d7c15cd9.jpg",
+          "flavor_description": "Pop-Up Cups are tournaments testing temporary limited time modes. Explorer will test several gameplay adjustments, and may differ from day-to-day.",
+          "poster_front_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FExplorerPopup_Duos_Front-750x1080-60bf5f428423ebfeb4f10ec9d115ab998cd28acb.jpg",
+          "short_format_title": "Daily Trials",
+          "title_line_2": "POP-UP CUP",
+          "title_line_1": "EXPLORER",
+          "details_description": "Score points by eliminating multiple opponents and surviving against the competition! Score at least 20 points to earn a tournament pin.",
+          "long_format_title": "Practice Event",
+          "poster_fade_color": "EBBF26",
+          "secondary_color": "FF3299",
+          "pin_score_requirement": 20,
+          "title_color": "7E058F",
+          "loading_screen_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FExporerPopUp_Duos_ModeTile-1024x512-9e5193dfc1433a2231a323224d19b6df47bdd13f.jpg",
+          "background_right_color": "3C096B",
+          "_type": "Tournament Display Info",
+          "pin_earned_text": "Top Team!",
+          "tournament_display_id": "explorer_popup_duo",
+          "highlight_color": "FFFFFF",
+          "schedule_info": "DUO",
+          "primary_color": "FFF64E",
+          "shadow_color": "FF36A4",
+          "background_left_color": "8B008D",
+          "playlist_tile_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FExporerPopUp_Duos_ModeTile-1024x512-9e5193dfc1433a2231a323224d19b6df47bdd13f.jpg",
+          "base_color": "FFFFFF"
+        },
+        {
+          "background_text_color": "390087",
+          "poster_back_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FExplorerPopUp_Solo_Back-750x1080-080ca0bb7df70d98bb83ae78659c3837e7d3e64a.jpg",
+          "flavor_description": "Pop-Up Cups are tournaments testing temporary limited time modes. Explorer will test several gameplay adjustments, and may differ from day-to-day.",
+          "poster_front_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FExplorerPopUp_Solo_Front-750x1080-0c5e6673337504852a287cee9fe1be4183326f5a.jpg",
+          "short_format_title": "Daily Trials",
+          "title_line_2": "POP-UP CUP",
+          "title_line_1": "EXPLORER",
+          "details_description": "Score points by eliminating multiple opponents and surviving against the competition! Score at least 20 points to earn a tournament pin.",
+          "long_format_title": "Practice Event",
+          "poster_fade_color": "420793",
+          "secondary_color": "FF1A40",
+          "pin_score_requirement": 20,
+          "title_color": "0BFFAC",
+          "loading_screen_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FExplroerPopUp_Solo_ModeTile-1024x512-16e9bbdd97730ec69771050aae16addf6bebe68b.jpg",
+          "background_right_color": "41108C",
+          "_type": "Tournament Display Info",
+          "pin_earned_text": "Top Competitor!",
+          "tournament_display_id": "explorer_popup_solo",
+          "highlight_color": "FFFFFF",
+          "schedule_info": "SOLO",
+          "primary_color": "0BFFAC",
+          "shadow_color": "5000BE",
+          "background_left_color": "B537FB",
+          "playlist_tile_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FExplroerPopUp_Solo_ModeTile-1024x512-16e9bbdd97730ec69771050aae16addf6bebe68b.jpg",
+          "base_color": "FFFFFF"
+        },
+        {
+          "background_text_color": "FF4401",
+          "poster_back_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FAlchemist-_Solo_Back-750x1080-6f392a5b4362ee1c49f1615521f4f8b017125e37.jpg",
+          "flavor_description": "Pop-Up Cups are tournaments testing temporary limited time modes. Alchemist will test several gameplay adjustments, and may differ from day-to-day.",
+          "poster_front_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FAlchemist-_Solo_Front-750x1080-932669f6b2f2b299a49e7139d6372dfe5f518c08.jpg",
+          "short_format_title": "Daily Trials",
+          "title_line_2": "POP-UP CUP",
+          "title_line_1": "ALCHEMIST",
+          "details_description": "Score points by eliminating multiple opponents and surviving against the competition! Score at least 20 points to earn a tournament pin.",
+          "long_format_title": "Practice Event",
+          "poster_fade_color": "B518FF",
+          "secondary_color": "FF4401",
+          "pin_score_requirement": 20,
+          "title_color": "FDF800",
+          "loading_screen_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FModeTile_Alchemist--1024x512-19e57f3ed423e325f3e6c35004966329422ca310.jpg",
+          "background_right_color": "B518FF",
+          "pin_earned_text": "Top Team!",
+          "_type": "Tournament Display Info",
+          "tournament_display_id": "alchemist_popup",
+          "highlight_color": "FF4401",
+          "schedule_info": "November 27 - December 3rd",
+          "primary_color": "FDF800",
+          "shadow_color": "6B23AC",
+          "background_left_color": "7A00E8",
+          "playlist_tile_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FModeTile_Alchemist--1024x512-19e57f3ed423e325f3e6c35004966329422ca310.jpg",
+          "base_color": "FFFFFF"
+        },
+        {
+          "background_text_color": "2D7EFC",
+          "poster_back_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FWinterRoyale_Solo_Back-750x1080-a2981671e815c953302121f460d93fe811ba7b12.jpg",
+          "flavor_description": "Play in the Winter Royale Qualifiers!  Players with the top score during any qualifying session will be invited to the Winter Royale Finals to play for $1,000,000 in prizes.",
+          "poster_front_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FWinterRoyale_Solo_Front-750x1080-f041e3551d0f764455b1b59e5d5b352736e7bd82.jpg",
+          "short_format_title": "Qualifying Sessions",
+          "title_line_2": "ROYALE",
+          "title_line_1": "WINTER",
+          "details_description": "Score points by eliminating multiple opponents and surviving against the competition! Players with the Top 200 scores will be invited to compete in the Winter Royale Finals. Only your highest scoring Qualifying Session will count toward your score. Earning a pin does not affect qualification for the Winter Royale Finals. Full rules and eligibility details can be found on www.fortnite.com/esports.",
+          "long_format_title": "Winter Royale Qualifiers",
+          "poster_fade_color": "AAFBF6",
+          "secondary_color": "001F8B",
+          "pin_score_requirement": 25,
+          "title_color": "58FE85",
+          "loading_screen_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FModeTile_WinterRoyale-1024x512-75547d897a08a35eeecc9c18c7e63515a1b7e439.jpg",
+          "background_right_color": "070B83",
+          "_type": "Tournament Display Info",
+          "pin_earned_text": "Top Competitor! Keep Going!",
+          "tournament_display_id": "winter_royale_qual",
+          "highlight_color": "6DFDFF",
+          "schedule_info": "$1,000,000 in Prizes",
+          "primary_color": "6DFDFF",
+          "shadow_color": "124EA8",
+          "background_left_color": "0E60BC",
+          "playlist_tile_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FModeTile_WinterRoyale-1024x512-75547d897a08a35eeecc9c18c7e63515a1b7e439.jpg",
+          "base_color": "FFFFFF"
+        },
+        {
+          "background_text_color": "375D67",
+          "poster_back_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FTomatoTempleCup_Duo_Back-750x1080-1fcd378710d5de4297a3be8a6f2c0b86a28f069a.jpg",
+          "flavor_description": "Pop-Up Cups are tournaments testing temporary limited time modes. Scavenger will test several gameplay adjustments - reduced material limit, faster material harvesting, storm timing adjustments, and earning health for eliminations.",
+          "poster_front_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FTomatoTempleCup_Duo_Front-750x1080-10d42cd44be215ba180777ce5b18f1491345ba34.jpg",
+          "short_format_title": "Daily Trials",
+          "title_line_2": "POP-UP CUP DUOS",
+          "title_line_1": "SCAVENGER",
+          "details_description": "Score points by eliminating multiple opponents and surviving against the competition! Score at least 25 points to earn a tournament pin.",
+          "long_format_title": "Practice Event",
+          "poster_fade_color": "F69904",
+          "secondary_color": "527460",
+          "pin_score_requirement": 25,
+          "title_color": "73D970",
+          "loading_screen_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FPlaylistTile_TomatoTempleCup-%281%29-1024x512-da36b15fa4030d2e7bb7547cf9425031ef62a054.png",
+          "background_right_color": "E6470D",
+          "_type": "Tournament Display Info",
+          "pin_earned_text": "Top Team!",
+          "tournament_display_id": "scavenger_popup_duos",
+          "highlight_color": "B2FFB1",
+          "schedule_info": "November 20th - 22nd",
+          "primary_color": "3BF84D",
+          "shadow_color": "3F6A6A",
+          "background_left_color": "FE8F01",
+          "playlist_tile_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FPlaylistTile_TomatoTempleCup-%281%29-1024x512-da36b15fa4030d2e7bb7547cf9425031ef62a054.png",
+          "base_color": "ffffff"
+        },
+        {
+          "background_text_color": "FAC805",
+          "poster_back_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FSaltySpringsCup_Solo_Back-%281%29-750x1080-a14f7bd659a9f735d11c0bc3038a18d24212b970.jpg",
+          "flavor_description": "Pop-Up Cups are tournaments testing temporary limited time modes. Scavenger will test several gameplay adjustments - reduced material limit, faster material harvesting, and earning health for eliminations.",
+          "poster_front_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FSaltySpringsCup_Solo_Front-750x1080-d25244c8b31c36845159048d5273b29be29c8429.jpg",
+          "short_format_title": "Daily Trials",
+          "title_line_2": "POP-UP CUP",
+          "title_line_1": "SCAVENGER",
+          "details_description": "Score points by eliminating multiple opponents and surviving against the competition! Score at least 30 points to earn a tournament pin.",
+          "long_format_title": "Practice Event",
+          "poster_fade_color": "03DA82",
+          "secondary_color": "F9C606",
+          "pin_score_requirement": 30,
+          "title_color": "AC39FF",
+          "loading_screen_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FPlaylistTile_SaltySpringsCup-1024x512-0a524c65899c17ca5fb0360eb4c3caa623ffa368.png",
+          "background_right_color": "03DA82",
+          "_type": "Tournament Display Info",
+          "pin_earned_text": "Top Competitor!",
+          "tournament_display_id": "scavenger_popup",
+          "highlight_color": "BF49FF",
+          "schedule_info": "November 14th - 19th",
+          "primary_color": "6E0DB2",
+          "shadow_color": "53028E",
+          "background_left_color": "A9F54B",
+          "playlist_tile_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FPlaylistTile_SaltySpringsCup-1024x512-0a524c65899c17ca5fb0360eb4c3caa623ffa368.png",
+          "base_color": "ffffff"
+        },
+        {
+          "background_text_color": "11288F",
+          "poster_back_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FFortniteFriday_Squad_Back-750x1080-f3333347315deaf23ce2fa826a884833ba399d6d.jpg",
+          "flavor_description": "Join your friends every Friday and kick off your weekend with some exciting Squad action. Can your team rise to the top?",
+          "poster_front_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FFortniteFriday_Squad_Front-750x1080-a78d79973d2645da142f187920b3f922357d2043.jpg",
+          "short_format_title": "Weekly Rumble",
+          "title_line_2": "FORTNITE",
+          "title_line_1": "FRIDAY NIGHT",
+          "details_description": "Score up to 6 points every match by eliminating multiple opponents and surviving against the competition!  Score at least 25 total points in a session to earn a shiny pin!",
+          "long_format_title": "Squad Battles",
+          "poster_fade_color": "183E99",
+          "secondary_color": "E4308F",
+          "pin_score_requirement": 25,
+          "loading_screen_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FPlaylistTile_FridayNightFortnite-1024x512-03a3a7e1d0f2bf06ed860f1c364fbddd78688e46.png",
+          "title_color": "01FAE4",
+          "background_right_color": "11258E",
+          "_type": "Tournament Display Info",
+          "pin_earned_text": "Top Squad!",
+          "tournament_display_id": "fortnite_fridays_fall",
+          "highlight_color": "E4308F",
+          "schedule_info": "Every Friday!",
+          "primary_color": "EEF242",
+          "shadow_color": "39A4B6",
+          "background_left_color": "51ECC6",
+          "playlist_tile_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FPlaylistTile_FridayNightFortnite-1024x512-03a3a7e1d0f2bf06ed860f1c364fbddd78688e46.png",
+          "base_color": "FFFFFF"
+        },
+        {
+          "background_text_color": "571E9D",
+          "poster_back_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FBetaTournament-_Duo_Back-750x1080-fecc09cd6882f8b064216fb64529cda2ceb31dc1.jpg",
+          "flavor_description": "Grab a friend and take on the world - until you are the last two left. Three days in a row of tough Duo competition.",
+          "poster_front_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FBetaTournament-_Duo_Front-750x1080-6a83f95385c0b9fccba17cf4c32dd1d033c983a3.jpg",
+          "short_format_title": "Daily Trials",
+          "title_line_2": "DUOS",
+          "title_line_1": "PRACTICE TOURNAMENT",
+          "details_description": "Score up to 6 points every match by eliminating multiple opponents and surviving against the competition!  Score at least 20 total points in a session to earn a shiny pin!",
+          "long_format_title": "Practice Event",
+          "poster_fade_color": "9005C4",
+          "secondary_color": "5526C4",
+          "pin_score_requirement": 20,
+          "loading_screen_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FPlaylistTile_BetaTournament-1024x512-54198b4fdfd17d571aba81c216122853bacc83a6.png",
+          "title_color": "85EFD3",
+          "background_right_color": "D607EB",
+          "_type": "Tournament Display Info",
+          "pin_earned_text": "Top Team!",
+          "tournament_display_id": "beta_tournament",
+          "highlight_color": "4420CC",
+          "schedule_info": "October 23rd - 25th",
+          "primary_color": "ACFFD3",
+          "shadow_color": "0AC7D7",
+          "background_left_color": "850EA7",
+          "playlist_tile_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FPlaylistTile_BetaTournament-1024x512-54198b4fdfd17d571aba81c216122853bacc83a6.png",
+          "base_color": "ffffff"
+        },
+        {
+          "background_text_color": "375D67",
+          "poster_back_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FAlphaTournament_Solo_Back-750x1080-994abaad723dd8bd579d6c4518d5a44c9fcebc85.jpg",
+          "flavor_description": "Participate in the first in-game tournament, spanning across several days of daily competition! Earn a shiny pin!",
+          "poster_front_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FAlphaTournament_Solo_Front-750x1080-e876d3626963f0acf1afe5a404ead8f894eb7784.jpg",
+          "short_format_title": "Daily Trials",
+          "title_line_2": "SOLO",
+          "title_line_1": "PRACTICE TOURNAMENT",
+          "details_description": "Score up to 6 points every match by eliminating multiple opponents and surviving against the competition!  Score at least 20 total points in a session to earn a shiny pin!",
+          "long_format_title": "Practice Event",
+          "poster_fade_color": "7ad0e3",
+          "secondary_color": "5526C4",
+          "pin_score_requirement": 20,
+          "title_color": "FFF736",
+          "loading_screen_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FPlaylistTile_AlphaTournament-1024x512-a4c347a955f08f22ad624762fe98b37551e6eef8.png",
+          "background_right_color": "3272FF",
+          "_type": "Tournament Display Info",
+          "pin_earned_text": "Top Competitor!",
+          "tournament_display_id": "alpha_tournament",
+          "highlight_color": "4420CC",
+          "schedule_info": "October 16th - 21st",
+          "primary_color": "ACFFD3",
+          "shadow_color": "0AC7D7",
+          "background_left_color": "A6FFCB",
+          "playlist_tile_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FPlaylistTile_AlphaTournament-1024x512-a4c347a955f08f22ad624762fe98b37551e6eef8.png",
+          "base_color": "FFFFFF"
+        },
+        {
+          "pin_score_requirement": 20,
+          "title_color": "FFF736",
+          "background_text_color": "375D67",
+          "background_right_color": "3272FF",
+          "poster_back_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FAlphaTournament_Solo_Back-750x1080-994abaad723dd8bd579d6c4518d5a44c9fcebc85.jpg",
+          "_type": "Tournament Display Info",
+          "pin_earned_text": "Top Competitor!",
+          "tournament_display_id": "alpha_tournament_2",
+          "highlight_color": "4420CC",
+          "schedule_info": "October 27th - November 1st",
+          "primary_color": "ACFFD3",
+          "flavor_description": "Part 2 of the first in-game tournaments, spanning across several days of daily competition! Earn a shiny pin!",
+          "poster_front_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FAlphaTournament_Solo2_Front-750x1080-681e9a01f2634c711543b36cd30245b1b0846f7c.jpg",
+          "short_format_title": "Daily Trials",
+          "title_line_2": "SOLO V2",
+          "title_line_1": "PRACTICE TOURNAMENT",
+          "shadow_color": "0AC7D7",
+          "details_description": "Score up to 6 points every match by eliminating multiple opponents and surviving against the competition!  Score at least 20 total points in a session to earn a shiny pin!",
+          "background_left_color": "A6FFCB",
+          "long_format_title": "Practice Event",
+          "poster_fade_color": "7ad0e3",
+          "secondary_color": "5526C4",
+          "playlist_tile_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FPlaylistTile_AlphaTournament2-1024x512-70a00ccc70c99693c4477cf7c3562c4e2c1074ef.png",
+          "base_color": "FFFFFF"
+        },
+        {
+          "background_text_color": "571E9D",
+          "poster_back_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FBetaTournament-_Duo_Back-750x1080-fecc09cd6882f8b064216fb64529cda2ceb31dc1.jpg",
+          "flavor_description": "Grab a friend for another week of practice competition.",
+          "poster_front_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FBetaTournament-_Duo2_Front-750x1080-2c5f3acd037f2a749949f5d1c92edc39e6477311.jpg",
+          "short_format_title": "Daily Trials",
+          "title_line_2": "DUOS V2",
+          "title_line_1": "PRACTICE TOURNAMENT",
+          "details_description": "Score up to 6 points every match by eliminating multiple opponents and surviving against the competition!  Score at least 20 total points in a session to earn a shiny pin!",
+          "long_format_title": "Practice Event",
+          "poster_fade_color": "9005C4",
+          "secondary_color": "5526C4",
+          "pin_score_requirement": 20,
+          "title_color": "85EFD3",
+          "loading_screen_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FPlaylistTile_BetaTournament2-1024x512-438bf9615e13c058a69075c0e577af779d7e3aa8.png",
+          "background_right_color": "CA16DC",
+          "_type": "Tournament Display Info",
+          "pin_earned_text": "Top Team!",
+          "tournament_display_id": "beta_tournament_2",
+          "highlight_color": "4420CC",
+          "schedule_info": "November 5 - 8",
+          "primary_color": "ACFFD3",
+          "shadow_color": "0AC7D7",
+          "background_left_color": "850EA7",
+          "playlist_tile_image": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Ftournaments%2FPlaylistTile_BetaTournament2-1024x512-438bf9615e13c058a69075c0e577af779d7e3aa8.png",
+          "base_color": "FFFFFF"
+        }
+      ],
+      "_type": "Tournaments Info"
+    },
+    "_title": "tournamentinformation",
+    "_activeDate": "2018-11-13T22:32:47.734Z",
+    "lastModified": "2018-12-19T18:58:51.227Z",
+    "_locale": "en-US"
+  },
+  "emergencynotice": {
+    "news": {
+      "_type": "Battle Royale News",
+      "messages": []
+    },
+    "_title": "emergencynotice",
+    "_activeDate": "2018-08-06T19:00:26.217Z",
+    "lastModified": "2018-12-26T22:34:50.863Z",
+    "_locale": "en-US"
+  },
+  "koreancafe": {
+    "_title": "KoreanCafe",
+    "cafe_info": {
+      "cafes": [
+        {
+          "korean_cafe": "PCB.Partner.Neowiz",
+          "korean_cafe_description": "ON",
+          "_type": "PCB Info",
+          "korean_cafe_header": "PC CAFE BENEFITS"
+        },
+        {
+          "korean_cafe": "PCB.Partner.Other",
+          "korean_cafe_description": "ON",
+          "_type": "PCB Info",
+          "korean_cafe_header": "PC CAFE BENEFITS"
+        }
+      ],
+      "_type": "PCBs"
+    },
+    "_activeDate": "2018-10-25T18:35:49.659Z",
+    "lastModified": "2018-11-07T06:37:42.201Z",
+    "_locale": "en-US"
+  }
+}

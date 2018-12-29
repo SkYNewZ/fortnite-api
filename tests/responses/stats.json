@@ -1,0 +1,99 @@
+{
+  "stats": {
+    "allPlatforms": {
+      "duo": {
+        "score": 228079,
+        "matchesPlayed": 1458,
+        "placetop12": 329,
+        "lastModifiedAt": 1544826785,
+        "placetop1": 25,
+        "minutesPlayed": 3452,
+        "placetop5": 160,
+        "kills": 1025
+      },
+      "allGroupTypes": {
+        "score": 411806,
+        "matchesPlayed": 2414,
+        "placetop3": 82,
+        "kills": 1764,
+        "lastModifiedAt": 0,
+        "minutesPlayed": 5383,
+        "placetop1": 54,
+        "placetop12": 329,
+        "placetop10": 17,
+        "placetop25": 54,
+        "placetop5": 160,
+        "placetop6": 162
+      },
+      "squad": {
+        "score": 157083,
+        "placetop3": 82,
+        "lastModifiedAt": 1545173964,
+        "kills": 577,
+        "matchesPlayed": 745,
+        "minutesPlayed": 1625,
+        "placetop6": 162,
+        "placetop1": 28
+      },
+      "solo": {
+        "score": 26644,
+        "kills": 162,
+        "lastModifiedAt": 1544383451,
+        "matchesPlayed": 211,
+        "minutesPlayed": 306,
+        "placetop1": 1,
+        "placetop10": 17,
+        "placetop25": 54
+      }
+    },
+    "pc": {
+      "duo": {
+        "score": 228079,
+        "matchesPlayed": 1458,
+        "placetop12": 329,
+        "lastModifiedAt": 1544826785,
+        "placetop1": 25,
+        "minutesPlayed": 3452,
+        "placetop5": 160,
+        "kills": 1025
+      },
+      "allGroupTypes": {
+        "score": 411806,
+        "matchesPlayed": 2414,
+        "placetop3": 82,
+        "kills": 1764,
+        "lastModifiedAt": 1545173964,
+        "minutesPlayed": 5383,
+        "placetop1": 54,
+        "placetop12": 329,
+        "placetop10": 17,
+        "placetop25": 54,
+        "placetop5": 160,
+        "placetop6": 162
+      },
+      "squad": {
+        "score": 157083,
+        "placetop3": 82,
+        "lastModifiedAt": 1545173964,
+        "kills": 577,
+        "matchesPlayed": 745,
+        "minutesPlayed": 1625,
+        "placetop6": 162,
+        "placetop1": 28
+      },
+      "solo": {
+        "score": 26644,
+        "kills": 162,
+        "lastModifiedAt": 1544383451,
+        "matchesPlayed": 211,
+        "minutesPlayed": 306,
+        "placetop1": 1,
+        "placetop10": 17,
+        "placetop25": 54
+      }
+    },
+    "ps4": {},
+    "xb1": {}
+  },
+  "timeWindow": "alltime"
+}

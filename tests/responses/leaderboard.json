@@ -1,0 +1,8 @@
+{
+  "errorCode": "errors.com.epicgames.modules.stats.stat_not_found",
+  "errorMessage": "Stat definition not found for: br_placetop25_pc_m0_p9",
+  "messageVars": [],
+  "numericErrorCode": 28106,
+  "originatingService": "fortnite",
+  "intent": "prod-live"
+}

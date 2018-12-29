@@ -15,15 +15,16 @@
     "yarn": "1.x"
   },
   "scripts": {
-    "build": "babel src -d dist",
+    "build": "babel lib -d dist",
     "start": "yarn build && node dist/index.js",
     "start:production": "BABEL_ENV=production yarn build && NODE_ENV=production node dist/index.js",
     "nodemon": "yarn build && nodemon dist/index.js",
-    "lint": "eslint --fix src",
+    "lint": "eslint --fix lib",
     "serve": "node dist/index.js",
-    "test": "mocha --require babel-register --timeout 15000 --exit"
+    "test": "NODE_ENV=test mocha --require babel-register --timeout 3000 tests/*.js"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-minify": "^0.5.0",
@@ -37,7 +38,9 @@
     "swagger-ui-themes": "^3.0.0"
   },
   "devDependencies": {
+    "axios": "^0.18.0",
     "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
     "eslint": ">=5.0.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": ">=2.13.0",
@@ -45,6 +48,7 @@
     "eslint-plugin-promise": ">=4.0.0",
     "eslint-plugin-standard": ">=4.0.0",
     "mocha": "^5.2.0",
+    "nock": "^10.0.5",
     "nodemon": "^1.18.9"
   }
 }
