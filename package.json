@@ -22,7 +22,8 @@
     "express": "^4.16.4",
     "fortnite-client": "^2.2.0",
     "morgan": "^1.9.1",
-    "require-environment-variables": "^1.2.0"
+    "require-environment-variables": "^1.2.0",
+    "swagger-ui-express": "^4.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

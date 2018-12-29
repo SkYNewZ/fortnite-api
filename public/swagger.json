@@ -1,0 +1,1695 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Fortnite-api",
+    "description": "REST Fortnite API. Get stats, score, kills...",
+    "version": "1.0.0",
+    "contact": {
+      "name": "SkYNewZ",
+      "url": "https://www.lemairepro.fr",
+      "email": "quentin@lemairepro.fr"
+    },
+    "license": {
+      "name": "GNU General Public License v3.0",
+      "url": "https://en.wikipedia.org/wiki/GNU_General_Public_License"
+    }
+  },
+  "host": "HOSTNAME",
+  "basePath": "/api",
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "tags": [
+    {
+      "name": "Status"
+    },
+    {
+      "name": "News"
+    },
+    {
+      "name": "Store"
+    },
+    {
+      "name": "Lookup"
+    },
+    {
+      "name": "Stats",
+      "description": "Get all you Fornite stats"
+    }
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/status": {
+      "get": {
+        "tags": [
+          "Status"
+        ],
+        "summary": "Check Fortnite status",
+        "responses": {
+          "200": {
+            "description": "Fortnite is okay !",
+            "schema": {
+              "$ref": "#/definitions/Status"
+            }
+          }
+        }
+      }
+    },
+    "/news": {
+      "get": {
+        "tags": [
+          "News"
+        ],
+        "summary": "Get Fortnite News",
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "description": "Locale",
+            "default": "en-US"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A JSON objects of current news",
+            "schema": {
+              "$ref": "#/definitions/News"
+            }
+          }
+        }
+      }
+    },
+    "/store": {
+      "get": {
+        "tags": [
+          "Store"
+        ],
+        "summary": "Get Fortnite Store",
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "description": "Locale",
+            "default": "en-US"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Current store in-game",
+            "schema": {
+              "$ref": "#/definitions/Store"
+            }
+          }
+        }
+      }
+    },
+    "/stats/{username}": {
+      "get": {
+        "tags": [
+          "Stats"
+        ],
+        "summary": "Get user's stats by username",
+        "parameters": [
+          {
+            "name": "username",
+            "in": "path",
+            "type": "string",
+            "required": true,
+            "description": "Player username"
+          },
+          {
+            "name": "period",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "enum": [
+              "daily",
+              "weekly",
+              "monthly",
+              "alltime"
+            ],
+            "default": "alltime"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User stats for each platform",
+            "schema": {
+              "$ref": "#/definitions/Stats"
+            }
+          },
+          "400": {
+            "description": "Invalid period value"
+          },
+          "default": {
+            "description": "Unexpected error or unavailable stats for given period"
+          }
+        }
+      }
+    },
+    "/lookup/{username}": {
+      "get": {
+        "tags": [
+          "Lookup"
+        ],
+        "summary": "Return user info",
+        "parameters": [
+          {
+            "name": "username",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        }
+      }
+    },
+    "/lookup": {
+      "get": {
+        "summary": "Return array of multiple user info",
+        "tags": [
+          "Lookup"
+        ],
+        "parameters": [
+          {
+            "name": "ids",
+            "in": "query",
+            "description": "Comma-separated list of users's id",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/User"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "User": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "description": "Unique id in EpicGames server"
+        },
+        "displayName": {
+          "type": "string",
+          "description": "In-game display name"
+        }
+      }
+    },
+    "Status": {
+      "type": "object",
+      "properties": {
+        "serviceInstanceId": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "maintenanceUri": {
+          "type": "string"
+        },
+        "overrideCatalogIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allowedActions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "banned": {
+          "type": "boolean"
+        },
+        "launcherInfoDTO": {
+          "type": "object",
+          "properties": {
+            "appName": {
+              "type": "string"
+            },
+            "catalogItemId": {
+              "type": "string"
+            },
+            "namespace": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "Stats": {
+      "type": "object",
+      "properties": {
+        "stats": {
+          "properties": {
+            "allPlatforms": {
+              "properties": {
+                "duo": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop12": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop5": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                },
+                "allGroupTypes": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop3": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    },
+                    "placetop12": {
+                      "type": "number"
+                    },
+                    "placetop10": {
+                      "type": "number"
+                    },
+                    "placetop25": {
+                      "type": "number"
+                    },
+                    "placetop5": {
+                      "type": "number"
+                    },
+                    "placetop6": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                },
+                "squad": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "placetop3": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop6": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                },
+                "solo": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    },
+                    "placetop10": {
+                      "type": "number"
+                    },
+                    "placetop25": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "pc": {
+              "properties": {
+                "duo": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop12": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop5": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                },
+                "allGroupTypes": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop3": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    },
+                    "placetop12": {
+                      "type": "number"
+                    },
+                    "placetop10": {
+                      "type": "number"
+                    },
+                    "placetop25": {
+                      "type": "number"
+                    },
+                    "placetop5": {
+                      "type": "number"
+                    },
+                    "placetop6": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                },
+                "squad": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "placetop3": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop6": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                },
+                "solo": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    },
+                    "placetop10": {
+                      "type": "number"
+                    },
+                    "placetop25": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "ps4": {
+              "properties": {
+                "duo": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop12": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop5": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                },
+                "allGroupTypes": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop3": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    },
+                    "placetop12": {
+                      "type": "number"
+                    },
+                    "placetop10": {
+                      "type": "number"
+                    },
+                    "placetop25": {
+                      "type": "number"
+                    },
+                    "placetop5": {
+                      "type": "number"
+                    },
+                    "placetop6": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                },
+                "squad": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "placetop3": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop6": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                },
+                "solo": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    },
+                    "placetop10": {
+                      "type": "number"
+                    },
+                    "placetop25": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "xb1": {
+              "properties": {
+                "duo": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop12": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop5": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                },
+                "allGroupTypes": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop3": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    },
+                    "placetop12": {
+                      "type": "number"
+                    },
+                    "placetop10": {
+                      "type": "number"
+                    },
+                    "placetop25": {
+                      "type": "number"
+                    },
+                    "placetop5": {
+                      "type": "number"
+                    },
+                    "placetop6": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                },
+                "squad": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "placetop3": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop6": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                },
+                "solo": {
+                  "properties": {
+                    "score": {
+                      "type": "number"
+                    },
+                    "kills": {
+                      "type": "number"
+                    },
+                    "lastModifiedAt": {
+                      "type": "number"
+                    },
+                    "matchesPlayed": {
+                      "type": "number"
+                    },
+                    "minutesPlayed": {
+                      "type": "number"
+                    },
+                    "placetop1": {
+                      "type": "number"
+                    },
+                    "placetop10": {
+                      "type": "number"
+                    },
+                    "placetop25": {
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        },
+        "timeWindow": {
+          "type": "string"
+        }
+      }
+    },
+    "Store": {
+      "type": "object",
+      "properties": {
+        "refreshIntervalHrs": {
+          "type": "number"
+        },
+        "dailyPurchaseHrs": {
+          "type": "number"
+        },
+        "expiration": {
+          "type": "string"
+        },
+        "storefronts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "catalogEntries": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "offerId": {
+                      "type": "string"
+                    },
+                    "devName": {
+                      "type": "string"
+                    },
+                    "offerType": {
+                      "type": "string"
+                    },
+                    "prices": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "currencyType": {
+                            "type": "string"
+                          },
+                          "currencySubType": {
+                            "type": "string"
+                          },
+                          "regularPrice": {
+                            "type": "number"
+                          },
+                          "finalPrice": {
+                            "type": "number"
+                          },
+                          "saleExpiration": {
+                            "type": "string"
+                          },
+                          "basePrice": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "categories": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "dailyLimit": {
+                      "type": "number"
+                    },
+                    "weeklyLimit": {
+                      "type": "number"
+                    },
+                    "monthlyLimit": {
+                      "type": "number"
+                    },
+                    "appStoreId": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "requirements": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "metaInfo": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "key": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "catalogGroup": {
+                      "type": "string"
+                    },
+                    "catalogGroupPriority": {
+                      "type": "number"
+                    },
+                    "sortPriority": {
+                      "type": "number"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "shortDescription": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "displayAssetPath": {
+                      "type": "string"
+                    },
+                    "itemGrants": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "News": {
+      "properties": {
+        "_title": {
+          "type": "string"
+        },
+        "_activeDate": {
+          "type": "string"
+        },
+        "lastModified": {
+          "type": "string"
+        },
+        "_locale": {
+          "type": "string"
+        },
+        "survivalmessage": {
+          "properties": {
+            "_title": {
+              "type": "string"
+            },
+            "overrideablemessage": {
+              "properties": {
+                "_type": {
+                  "type": "string"
+                },
+                "message": {
+                  "properties": {
+                    "_type": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "body": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "_activeDate": {
+              "type": "string"
+            },
+            "lastModified": {
+              "type": "string"
+            },
+            "_locale": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "athenamessage": {
+          "properties": {
+            "_title": {
+              "type": "string"
+            },
+            "overrideablemessage": {
+              "properties": {
+                "_type": {
+                  "type": "string"
+                },
+                "message": {
+                  "properties": {
+                    "image": {
+                      "type": "string"
+                    },
+                    "_type": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "body": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "_activeDate": {
+              "type": "string"
+            },
+            "lastModified": {
+              "type": "string"
+            },
+            "_locale": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "subgameselectdata": {
+          "properties": {
+            "saveTheWorldUnowned": {
+              "properties": {
+                "_type": {
+                  "type": "string"
+                },
+                "message": {
+                  "properties": {
+                    "image": {
+                      "type": "string"
+                    },
+                    "hidden": {
+                      "type": "boolean"
+                    },
+                    "messagetype": {
+                      "type": "string"
+                    },
+                    "_type": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "body": {
+                      "type": "string"
+                    },
+                    "spotlight": {
+                      "type": "boolean"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "_title": {
+              "type": "string"
+            },
+            "battleRoyale": {
+              "properties": {
+                "_type": {
+                  "type": "string"
+                },
+                "message": {
+                  "properties": {
+                    "image": {
+                      "type": "string"
+                    },
+                    "hidden": {
+                      "type": "boolean"
+                    },
+                    "messagetype": {
+                      "type": "string"
+                    },
+                    "_type": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "body": {
+                      "type": "string"
+                    },
+                    "spotlight": {
+                      "type": "boolean"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "creative": {
+              "properties": {
+                "_type": {
+                  "type": "string"
+                },
+                "message": {
+                  "properties": {
+                    "image": {
+                      "type": "string"
+                    },
+                    "hidden": {
+                      "type": "boolean"
+                    },
+                    "messagetype": {
+                      "type": "string"
+                    },
+                    "_type": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "body": {
+                      "type": "string"
+                    },
+                    "spotlight": {
+                      "type": "boolean"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "saveTheWorld": {
+              "properties": {
+                "_type": {
+                  "type": "string"
+                },
+                "message": {
+                  "properties": {
+                    "image": {
+                      "type": "string"
+                    },
+                    "hidden": {
+                      "type": "boolean"
+                    },
+                    "messagetype": {
+                      "type": "string"
+                    },
+                    "_type": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "body": {
+                      "type": "string"
+                    },
+                    "spotlight": {
+                      "type": "boolean"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "_activeDate": {
+              "type": "string"
+            },
+            "lastModified": {
+              "type": "string"
+            },
+            "_locale": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "savetheworldnews": {
+          "properties": {
+            "news": {
+              "properties": {
+                "_type": {
+                  "type": "string"
+                },
+                "messages": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "image": {
+                        "type": "string"
+                      },
+                      "hidden": {
+                        "type": "boolean"
+                      },
+                      "messagetype": {
+                        "type": "string"
+                      },
+                      "_type": {
+                        "type": "string"
+                      },
+                      "adspace": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "body": {
+                        "type": "string"
+                      },
+                      "spotlight": {
+                        "type": "boolean"
+                      }
+                    }
+                  }
+                }
+              },
+              "type": "object"
+            },
+            "_title": {
+              "type": "string"
+            },
+            "header": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "_activeDate": {
+              "type": "string"
+            },
+            "lastModified": {
+              "type": "string"
+            },
+            "_locale": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "battleroyalenews": {
+          "properties": {
+            "news": {
+              "properties": {
+                "_type": {
+                  "type": "string"
+                },
+                "messages": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "image": {
+                        "type": "string"
+                      },
+                      "hidden": {
+                        "type": "boolean"
+                      },
+                      "messagetype": {
+                        "type": "string"
+                      },
+                      "_type": {
+                        "type": "string"
+                      },
+                      "adspace": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "body": {
+                        "type": "string"
+                      },
+                      "spotlight": {
+                        "type": "boolean"
+                      }
+                    }
+                  }
+                }
+              },
+              "type": "object"
+            },
+            "_title": {
+              "type": "string"
+            },
+            "header": {
+              "type": "string"
+            },
+            "style": {
+              "type": "string"
+            },
+            "_activeDate": {
+              "type": "string"
+            },
+            "lastModified": {
+              "type": "string"
+            },
+            "_locale": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "loginmessage": {
+          "properties": {
+            "_title": {
+              "type": "string"
+            },
+            "loginmessage": {
+              "properties": {
+                "_type": {
+                  "type": "string"
+                },
+                "message": {
+                  "properties": {
+                    "_type": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "body": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "_activeDate": {
+              "type": "string"
+            },
+            "lastModified": {
+              "type": "string"
+            },
+            "_locale": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "playlistimages": {
+          "properties": {
+            "playlistimages": {
+              "properties": {
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "image": {
+                        "type": "string"
+                      },
+                      "_type": {
+                        "type": "string"
+                      },
+                      "playlistname": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "_type": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "_title": {
+              "type": "string"
+            },
+            "_activeDate": {
+              "type": "string"
+            },
+            "lastModified": {
+              "type": "string"
+            },
+            "_locale": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "battlepassaboutmessages": {
+          "properties": {
+            "news": {
+              "properties": {
+                "_type": {
+                  "type": "string"
+                },
+                "messages": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "layout": {
+                        "type": "string"
+                      },
+                      "image": {
+                        "type": "string"
+                      },
+                      "hidden": {
+                        "type": "boolean"
+                      },
+                      "_type": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "body": {
+                        "type": "string"
+                      },
+                      "spotlight": {
+                        "type": "boolean"
+                      }
+                    }
+                  }
+                }
+              },
+              "type": "object"
+            },
+            "_title": {
+              "type": "string"
+            },
+            "_activeDate": {
+              "type": "string"
+            },
+            "lastModified": {
+              "type": "string"
+            },
+            "_locale": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "playlistinformation": {
+          "properties": {
+            "frontend_matchmaking_header_style": {
+              "type": "string"
+            },
+            "_title": {
+              "type": "string"
+            },
+            "frontend_matchmaking_header_text": {
+              "type": "string"
+            },
+            "playlist_info": {
+              "properties": {
+                "_type": {
+                  "type": "string"
+                },
+                "playlists": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "image": {
+                        "type": "string"
+                      },
+                      "playlist_name": {
+                        "type": "string"
+                      },
+                      "_type": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              "type": "object"
+            },
+            "_activeDate": {
+              "type": "string"
+            },
+            "lastModified": {
+              "type": "string"
+            },
+            "_locale": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "tournamentinformation": {
+          "properties": {
+            "tournament_info": {
+              "properties": {
+                "tournaments": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "background_text_color": {
+                        "type": "string"
+                      },
+                      "poster_back_image": {
+                        "type": "string"
+                      },
+                      "flavor_description": {
+                        "type": "string"
+                      },
+                      "poster_front_image": {
+                        "type": "string"
+                      },
+                      "short_format_title": {
+                        "type": "string"
+                      },
+                      "title_line_2": {
+                        "type": "string"
+                      },
+                      "title_line_1": {
+                        "type": "string"
+                      },
+                      "details_description": {
+                        "type": "string"
+                      },
+                      "long_format_title": {
+                        "type": "string"
+                      },
+                      "poster_fade_color": {
+                        "type": "string"
+                      },
+                      "secondary_color": {
+                        "type": "string"
+                      },
+                      "pin_score_requirement": {
+                        "type": "number"
+                      },
+                      "title_color": {
+                        "type": "string"
+                      },
+                      "loading_screen_image": {
+                        "type": "string"
+                      },
+                      "background_right_color": {
+                        "type": "string"
+                      },
+                      "_type": {
+                        "type": "string"
+                      },
+                      "pin_earned_text": {
+                        "type": "string"
+                      },
+                      "tournament_display_id": {
+                        "type": "string"
+                      },
+                      "highlight_color": {
+                        "type": "string"
+                      },
+                      "schedule_info": {
+                        "type": "string"
+                      },
+                      "primary_color": {
+                        "type": "string"
+                      },
+                      "shadow_color": {
+                        "type": "string"
+                      },
+                      "background_left_color": {
+                        "type": "string"
+                      },
+                      "playlist_tile_image": {
+                        "type": "string"
+                      },
+                      "base_color": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "_type": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "_title": {
+              "type": "string"
+            },
+            "_activeDate": {
+              "type": "string"
+            },
+            "lastModified": {
+              "type": "string"
+            },
+            "_locale": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "emergencynotice": {
+          "properties": {
+            "news": {
+              "properties": {
+                "_type": {
+                  "type": "string"
+                },
+                "messages": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "type": "object"
+            },
+            "_title": {
+              "type": "string"
+            },
+            "_activeDate": {
+              "type": "string"
+            },
+            "lastModified": {
+              "type": "string"
+            },
+            "_locale": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "koreancafe": {
+          "properties": {
+            "_title": {
+              "type": "string"
+            },
+            "cafe_info": {
+              "properties": {
+                "cafes": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "korean_cafe": {
+                        "type": "string"
+                      },
+                      "korean_cafe_description": {
+                        "type": "string"
+                      },
+                      "_type": {
+                        "type": "string"
+                      },
+                      "korean_cafe_header": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "_type": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "_activeDate": {
+              "type": "string"
+            },
+            "lastModified": {
+              "type": "string"
+            },
+            "_locale": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      }
+    }
+  }
+}
