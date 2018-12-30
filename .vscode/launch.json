@@ -8,7 +8,48 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/dist/index.js"
+            "program": "${workspaceFolder}/dist/index.js",
+            "envFile": "${workspaceFolder}/.env",
+            "cwd": "${workspaceRoot}",
+            "protocol": "inspector",
+            "outputCapture": "std",
+        },
+        {
+            "name": "Current Test File",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--require", "babel-register",
+                "---timeout", "3000",
+                "--colors",
+                "${relativeFile}"
+            ],
+            "cwd": "${workspaceRoot}",
+            "protocol": "inspector",
+            "envFile": "${workspaceFolder}/.env",
+            "env": {
+                "NODE_ENV": "test"
+            }
+        },
+        {
+            "name": "All tests",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--require", "babel-register",
+                "---timeout", "3000",
+                "--colors",
+                "${workspaceRoot}/tests/*.js"
+            ],
+            "cwd": "${workspaceRoot}",
+            "protocol": "inspector",
+            "outputCapture": "std",
+            "envFile": "${workspaceFolder}/.env",
+            "env": {
+                "NODE_ENV": "test"
+            }
         }
     ]
 }
