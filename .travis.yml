@@ -1,0 +1,47 @@
+branches:
+  only:
+  - master
+
+language: node_js
+
+node_js:
+  - "11.5.0"
+
+notifications:
+  slack: devopslille:HcTQJRlD5FHkVG5YWqKYZuzs
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+install:
+  - yarn
+
+script:
+  - yarn test
+
+before_deploy:
+  # Set up git user name and tag this commit
+  - >
+    if ! [ "$BEFORE_DEPLOY_RUN" ]; then
+      export BEFORE_DEPLOY_RUN=1;
+      git config --local user.name "travis@travis-ci.org"
+      git config --local user.email "Travis CI"
+      export TRAVIS_TAG=$(jq -r ".version" package.json)
+      git tag $TRAVIS_TAG
+    fi
+
+deploy:
+  - provider: script
+    script: bash scripts/deploy.sh
+    skip_cleanup: true
+  - provider: releases
+    api_key: $GITHUB_TOKEN
+    name: $TRAVIS_TAG
+    overwrite: true
+    skip_cleanup: true
+  - provider: heroku
+    api_key: $HEROKU_API_KEY
+    skip_cleanup: true
+    app: fortnite-lemairepro

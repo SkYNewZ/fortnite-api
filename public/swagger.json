@@ -44,7 +44,7 @@
     "application/json"
   ],
   "paths": {
-    "/check": {
+    "/status": {
       "get": {
         "tags": [
           "Status"
