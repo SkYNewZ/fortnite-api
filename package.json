@@ -18,11 +18,10 @@
     "build": "babel lib -d dist",
     "start": "yarn build && node dist/server.js",
     "start:production": "BABEL_ENV=production yarn build && NODE_ENV=production node dist/server.js",
-    "nodemon": "yarn build && nodemon dist/server.js",
     "lint": "eslint --fix lib",
     "serve": "node dist/server.js",
     "test": "yarn build && NODE_ENV=test nyc --reporter=html --reporter=text mocha --colors --require babel-register --timeout 3000 tests/*.js",
-    "coverage": "nyc report --reporter=text-lcov | COVERALLS_GIT_COMMIT=HEAD coveralls"
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
@@ -44,7 +43,7 @@
     "babel-plugin-istanbul": "^5.1.0",
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
-    "coveralls": "^3.0.2",
+    "codecov": "^3.1.0",
     "eslint": ">=5.0.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": ">=2.13.0",
@@ -53,7 +52,6 @@
     "eslint-plugin-standard": ">=4.0.0",
     "mocha": "^5.2.0",
     "nock": "^10.0.5",
-    "nodemon": "^1.18.9",
     "nyc": "^13.1.0"
   },
   "nyc": {
