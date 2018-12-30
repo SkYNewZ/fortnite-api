@@ -1,23 +1,30 @@
 import axios from 'axios'
-import { it, describe, before } from 'mocha'
+import { it, describe, before, after } from 'mocha'
 import { expect } from 'chai'
 import nock from 'nock'
 import { TimeWindow } from 'fortnite-client'
 import tabulateLogging from './utils'
+import { server } from '../lib/server'
 
 const statsResponse = require('./responses/stats.json')
+let running
 
 describe('/stats', () => {
-  before(() => {
+  before(done => {
     // https://www.npmjs.com/package/nock#allow-unmocked-requests-on-a-mocked-hostname
     nock('http://127.0.0.1:3000', { allowUnmocked: true })
       .log(tabulateLogging)
       .get('/api/stats/skynewz')
       .times(2)
       .reply(200, statsResponse)
+    running = server.listen(3000, done())
   })
 
-  it('sould return 200', (done) => {
+  after(done => {
+    running.close(done())
+  })
+
+  it('sould return 200', done => {
     axios.get('http://127.0.0.1:3000/api/stats/skynewz')
       .then(response => {
         expect(response.status).to.be.equal(200)
@@ -25,7 +32,7 @@ describe('/stats', () => {
       })
   })
 
-  it('sould be stats object', (done) => {
+  it('sould be stats object', done => {
     axios.get('http://127.0.0.1:3000/api/stats/skynewz')
       .then(response => {
         expect(response.data).to.deep.equal(statsResponse)
@@ -33,7 +40,7 @@ describe('/stats', () => {
       })
   })
 
-  it('sould return 400', (done) => {
+  it('sould return 400', done => {
     axios.get('http://127.0.0.1:3000/api/stats/skynewz?period=badperiod')
       .catch(error => {
         expect(error.response.status).to.be.equal(400)

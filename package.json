@@ -2,7 +2,7 @@
   "name": "fortnite-api",
   "version": "1.0.0",
   "description": "REST Fortnite API. Get stats, score, kills...",
-  "main": "index.js",
+  "main": "dist/server.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/SkYNewZ/fortnite-api.git"
@@ -16,11 +16,11 @@
   },
   "scripts": {
     "build": "babel lib -d dist",
-    "start": "yarn build && node dist/index.js",
-    "start:production": "BABEL_ENV=production yarn build && NODE_ENV=production node dist/index.js",
-    "nodemon": "yarn build && nodemon dist/index.js",
+    "start": "yarn build && node dist/server.js",
+    "start:production": "BABEL_ENV=production yarn build && NODE_ENV=production node dist/server.js",
+    "nodemon": "yarn build && nodemon dist/server.js",
     "lint": "eslint --fix lib",
-    "serve": "node dist/index.js",
+    "serve": "node dist/server.js",
     "test": "NODE_ENV=test mocha --require babel-register --timeout 3000 tests/*.js"
   },
   "dependencies": {
