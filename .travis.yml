@@ -3,6 +3,9 @@ language: node_js
 node_js:
   - "11.5.0"
 
+services:
+  - docker
+
 notifications:
   slack: devopslille:HcTQJRlD5FHkVG5YWqKYZuzs
 
@@ -33,20 +36,16 @@ before_deploy:
 
 deploy:
   - provider: script
-    script: bash scripts/deploy.sh
-    # skip_cleanup: true
+    script: bash scripts/sentry.sh
     on:
       branch: master
   - provider: releases
     api_key: $GITHUB_TOKEN
     name: $TRAVIS_TAG
     overwrite: true
-    # skip_cleanup: true
     on:
       branch: master
-  - provider: heroku
-    api_key: $HEROKU_API_KEY
-    # skip_cleanup: true
-    app: fortnite-lemairepro
+  - provider: script
+    script: bash scripts/docker_push.sh
     on:
       branch: master

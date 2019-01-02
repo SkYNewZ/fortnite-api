@@ -8,3 +8,12 @@
 A simple NodeJS API to retrieve stats and infos from [Fortnite Game](https://www.epicgames.com/fortnite/fr/home).
 
 Powered by [Fortnite Client](https://github.com/weeco/fortnite-client)
+
+## Deploy with docker
+
+```bash
+docker run -it --rm -p 8080:3000 \
+        -e FORTNITE_ACCOUNT_EMAIL=email@epicgames.com \
+        -e FORTNITE_ACCOUNT_PASSWORD=password \
+        skynewz/fortnite-api
+```
