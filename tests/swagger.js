@@ -14,7 +14,7 @@ describe('/docs', () => {
     running.close(done())
   })
   it('sould return 200', done => {
-    axios.get('http://127.0.0.1:3000/docs')
+    axios.get('http://127.0.0.1:3000/api/docs')
       .then(response => {
         expect(response.status).to.be.equal(200)
         done()
