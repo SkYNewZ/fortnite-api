@@ -1,19 +1,15 @@
 {
   "name": "fortnite-api",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "REST Fortnite API. Get stats, score, kills...",
   "main": "dist/server.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/SkYNewZ/fortnite-api.git"
   },
-  "author": "SkYNewZ <quentin@lemairepro.fr> (https://www.lemairepro.fr)",
+  "author": "SkYNewZ <quentin@lemairepro.fr> (https://lemairepro.fr)",
   "license": "GPL-3.0",
-  "private": true,
-  "engines": {
-    "node": "11.x",
-    "yarn": "1.x"
-  },
+  "private": false,
   "scripts": {
     "build": "babel lib -d dist",
     "start": "yarn build && node dist/server.js",
