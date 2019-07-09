@@ -34,7 +34,7 @@
     "swagger-ui-themes": "^3.0.0"
   },
   "devDependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "babel-plugin-istanbul": "^5.1.0",
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
